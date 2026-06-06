@@ -1,4 +1,4 @@
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3NzkwODgzMTZ9.wfK8uPpldUwYrxEaY4-xL6Eyz0JkZNtEQG5bPo-4yYs
+@token = 
 ### 1️⃣ 登录（获取 token）
 POST http://localhost:8080/login
 Content-Type: application/json
@@ -10,8 +10,12 @@ Content-Type: application/json
 
 ### 2️⃣ 获取用户信息（第一次）
 GET http://localhost:8080/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3NzkwODgzMTZ9.wfK8uPpldUwYrxEaY4-xL6Eyz0JkZNtEQG5bPo-4yYs
+Authorization: Bearer 
 
 ### 3️⃣ 获取用户信息（第二次，验证缓存）
 GET http://localhost:8080/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3NzkwODgzMTZ9.wfK8uPpldUwYrxEaY4-xL6Eyz0JkZNtEQG5bPo-4yYs
+Authorization: Bearer 
+
+### 4️⃣ 登出
+POST http://localhost:8080/logout
+Authorization: Bearer 
